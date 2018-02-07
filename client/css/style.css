@@ -1,0 +1,72 @@
+html body {
+	color:white !important;
+	margin:0;
+	padding:0;
+	background: url(http://cdn.siriushd.net/bg.jpg) no-repeat center fixed !important; 
+	-webkit-background-size: cover !important;
+	background-size: cover !important;
+}
+.chat {
+    position: fixed;
+    z-index: 100;
+    right: 0;
+    width: 340px;
+    top: 51px;
+    bottom: 0;
+    border-left: 1px #0d0305 solid;
+    background: #0e0c13;
+    overflow: hidden
+}
+.chat iframe {
+    width: 340px;
+    height: 100%
+}
+.player {
+    display: block;
+    padding-right: 100px;
+}
+.btn-twitch { 
+  color: #FFFFFF; 
+  background-color: #6441A5; 
+  border-color: #2F1F4E; 
+} 
+
+.btn-twitch:hover, 
+.btn-twitch:focus, 
+.btn-twitch:active, 
+.btn-twitch.active, 
+.open .dropdown-toggle.btn-twitch { 
+  color: #FFFFFF; 
+  background-color: #472e75; 
+  border-color: #2F1F4E; 
+} 
+
+.btn-twitch:active, 
+.btn-twitch.active, 
+.open .dropdown-toggle.btn-twitch { 
+  background-image: none; 
+} 
+
+.btn-twitch.disabled, 
+.btn-twitch[disabled], 
+fieldset[disabled] .btn-twitch, 
+.btn-twitch.disabled:hover, 
+.btn-twitch[disabled]:hover, 
+fieldset[disabled] .btn-twitch:hover, 
+.btn-twitch.disabled:focus, 
+.btn-twitch[disabled]:focus, 
+fieldset[disabled] .btn-twitch:focus, 
+.btn-twitch.disabled:active, 
+.btn-twitch[disabled]:active, 
+fieldset[disabled] .btn-twitch:active, 
+.btn-twitch.disabled.active, 
+.btn-twitch[disabled].active, 
+fieldset[disabled] .btn-twitch.active { 
+  background-color: #6441A5; 
+  border-color: #2F1F4E; 
+} 
+
+.btn-twitch .badge { 
+  color: #6441A5; 
+  background-color: #FFFFFF; 
+}

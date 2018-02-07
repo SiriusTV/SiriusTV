@@ -1,0 +1,82 @@
+<head>
+<title>SiriusTV</title>
+<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+</head>
+<body>
+
+</body>
+
+<template name="main_layout">
+  <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+        <span class="sr-only">Toggle navigation</span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="/">SiriusTV</a>
+    </div>
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li><a href="/">Stream</a></li>
+        <li><a href="/planing">Planing</a></li>
+        <li><a href="/youtube">YouTube</a></li>
+        <li><a href="/extention">Extention</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+  {{> yield}}
+  <script src="https://ajax.googleapis.com/ajax/libs/dojo/1.13.0/dojo/dojo.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+</template>
+  <template name="stream">
+<div class="col-xs-12" style="height:100px;"></div>
+<div class="container">
+  <div class="row twitch">
+        <div class="player col-md-10">
+      <div class="embed-responsive embed-responsive-16by9">
+        <iframe src="https://player.twitch.tv/?channel=sirius242"></iframe>
+      </div>
+      <div class="col-md-2">  <div class="chat">
+        <iframe src="https://www.twitch.tv/sirius242/chat?popout=" width="100%" frameborder="0" scrolling="no"></iframe>
+      </div>
+    </div>
+  </div>
+</div>
+<div class="col-xs-12" style="height:50px;"></div>
+    <div class="row moneybutton">
+        <div class="bouton col-md-4">
+          <!-- SOON! :)
+          <button type="button" class="btn btn-twitch disabled">
+        <i class="fa fa-1x fa-twitch"></i> Follow
+      </button>-->
+          <a href="https://www.twitch.tv/products/sirius242"> <button type="button" class="btn btn-twitch">
+        <i class="fa fa-1x fa-twitch"></i> Sub
+      </button></a>
+          <a href="https://www.tipeeestream.com/sirius242/donation"> <button type="button" class="btn btn-twitch">
+        <i class="fa fa-1x fa-usd"></i> Dons
+      </button></a>
+        </div>
+    </div>
+</div>
+</template>
+
+<template name="extention">
+  <center><h1>HELLO WORLD!</h1>
+  <h1>ICI CE SERAS L'EXTENTIOON CHROME ET FIREFOX!!!!!!!!!!</h1></center>
+</template>
+
+<template name="youtube">
+<center><h1>Hello Word! ici viendras la page pour Youtube :)</h1></center>  
+</template>
+
+<template name="planing">
+<center><img src="http://cdn.siriushd.net/Planing%20fev%201.jpg" width="60%"></center>  
+</template>

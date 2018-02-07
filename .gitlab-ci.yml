@@ -1,0 +1,53 @@
+before_script:
+  - echo "======================================"
+  - echo "==== START auto full script v0.1 ====="
+  - echo "======================================"
+
+types:
+  - cleanup
+  - build
+  - test
+  - deploy
+
+job_cleanup:
+  type: cleanup
+  script:
+  - cd /home/gitlab-runner/erecaho-build
+  - echo "cleaning up existing bundle folder"
+  - echo "cleaning up current server-running folder"
+  - rm -fr ./server-alpha-running
+  - mkdir ./server-alpha-running
+  only:
+  - master
+  tags:
+  - master
+
+job_build:
+  type: build
+  script:
+  - pwd
+  - meteor build /home/gitlab-runner/erecaho-build/server-alpha-running --directory --server=http://tv.siriushd.ch:3000 --verbose
+
+job_test:
+  type: test
+  script:
+  - echo "testing ----"
+  - cd /home/gitlab-runner/erecaho-build/server-alpha-running/bundle
+  - ls -la main.js
+  only:
+  - master
+  tags:
+  - master
+
+job_deploy:
+  type: deploy
+  script:
+  - echo "deploying ----"
+  - cd /home/gitlab-runner/erecaho-build/server-alpha-running/bundle/programs/server/ && /home/gitlab-runner/.meteor/packages/meteor-tool/1.1.10/mt-os.linux.x86_64/dev_bundle/bin/npm install
+  - cd ../..
+  - sudo restart meteor-service
+  - sudo status meteor-service
+  only:
+  - master
+  tags:
+  - master
