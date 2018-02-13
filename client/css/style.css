@@ -69,4 +69,32 @@ fieldset[disabled] .btn-twitch.active {
 .btn-twitch .badge { 
   color: #6441A5; 
   background-color: #FFFFFF; 
+<<<<<<< HEAD
+=======
+}
+.footer {
+	position: absolute;
+	bottom: 0px;
+}
+ .txtbg {
+    background-color: #fff;
+    left: 20px;
+    right: 20px;
+    border-radius: 5px;
+  }
+@media screen and (max-width: 992px) {
+	.player {
+    display: block;
+    padding-right: 0;
+}
+	.player iframe {
+		position: absolute;
+		left: 10px;
+		top: 50px;
+	}
+	.chat iframe {
+    width: 0px;
+    height: 0%
+	}
+>>>>>>> parent of 1a32dfc... ajout planning css
 }
