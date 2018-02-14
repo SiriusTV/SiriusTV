@@ -14,7 +14,7 @@ html body {
   width: 340px;
   top: 51px;
   bottom: 0;
-  border-left: 1px #0d0305 solid;
+  border-left: 0px #0d0305 solid;
   background: #0e0c13;
   overflow: hidden
 }
