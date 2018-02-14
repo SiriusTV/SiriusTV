@@ -134,7 +134,7 @@ fieldset[disabled] .btn-twitch.active {
     width: 58%;
     height: 30vw;
 }
-  .chat iframe {
+  .chat {
     width: 0px;
     height: 0%
   }
@@ -155,4 +155,39 @@ fieldset[disabled] .btn-twitch.active {
     width: 0px;
     height: 0%
   }
+}
+.logo {
+  margin-top: 150px;
+  color: #c4c4c4;
+}
+.logo hr { 
+  height: 30px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 1px 0 0 0; 
+  border-radius: 20px; 
+} 
+.logo hr:before { 
+  display: block; 
+  content: ""; 
+  height: 30px; 
+  margin-top: -31px; 
+  border-style: solid; 
+  border-color: #8c8b8b; 
+  border-width: 0 0 1px 0; 
+  border-radius: 20px; 
+}
+.logo img { 
+  filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    opacity: 0.4; 
+    filter: gray;
+    -webkit-transition: all .6s ease; 
+}
+
+.logo img:hover {    
+  filter: grayscale(0%);
+    -webkit-filter: grayscale(0%);
+    opacity: 1;
+    filter: none; 
 }
