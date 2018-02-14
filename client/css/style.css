@@ -31,6 +31,11 @@ html body {
   background-color: #6441A5; 
   border-color: #2F1F4E; 
 } 
+  .player iframe {
+    position: relative;
+    width: 89%;
+    height: 30vw;
+}
 
 .btn-twitch:hover, 
 .btn-twitch:focus, 
@@ -81,21 +86,6 @@ fieldset[disabled] .btn-twitch.active {
   right: 20px;
   border-radius: 5px;
 }
-@media screen and (max-width: 992px) {
-  .player {
-    display: block;
-    padding-right: 0;
-  }
-  .player iframe {
-    position: absolute;
-    left: 10px;
-    top: 50px;
-  }
-  .chat iframe {
-    width: 0px;
-    height: 0%
-  }
-}
 .planning
 {
   color: #000;
@@ -114,4 +104,55 @@ fieldset[disabled] .btn-twitch.active {
 }
 .prog img {
   margin-left: -15px;
+}
+@media screen and (max-width: 1440px) {
+  .player {
+    display: block;
+    padding-right: 0;
+  }
+  .player iframe {
+    position: relative;
+    left: 0px;
+    top: -20px;
+    width: 70%;
+    height: 30vw;
+}
+  .chat iframe {
+    width: 0px;
+    height: 0%
+  }
+}
+@media screen and (max-width: 1024px) {
+  .player {
+    display: block;
+    padding-right: 0;
+  }
+  .player iframe {
+    position: relative;
+    left: 0px;
+    top: -20px;
+    width: 58%;
+    height: 30vw;
+}
+  .chat iframe {
+    width: 0px;
+    height: 0%
+  }
+}
+@media screen and (max-width: 992px) {
+  .player {
+    display: block;
+    padding-right: 0;
+  }
+  .player iframe {
+    position: relative;
+    left: 0px;
+    top: -20px;
+    width: 99%;
+    height: 52vw;
+}
+  .chat iframe {
+    width: 0px;
+    height: 0%
+  }
 }
