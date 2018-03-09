@@ -1,3 +1,7 @@
+# This is old Unused and not working stuff.
+# This code stull uneder liscence
+[![SiriusMediaGroup](http://www.siriusmediagroup.com/themes/sirius-media-group/assets/img/SIRIUSMG(BL).png)](http://Siriusmediagroup.Com)
+
 [![Build Status](https://travis-ci.org/Siriusa77II/SiriusTV.svg?branch=master)](https://travis-ci.org/Siriusa77II/SiriusTV)
 ### Sirius.TV
 
